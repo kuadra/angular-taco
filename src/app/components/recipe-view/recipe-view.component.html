@@ -1,0 +1,16 @@
+<div style="width: 700px; margin: auto;">
+    <div style="width: 30%; display: inline-block;">
+        <app-saved-recipes></app-saved-recipes>
+    </div>
+    <div style="width: 70%; display: inline-block; vertical-align: top;">
+        <div>{{currentRecipe?.base_layer?.name}}</div>
+        <div>{{currentRecipe?.mixin?.name}}</div>
+        <div>{{currentRecipe?.seasoning?.name}}</div>
+        <div>{{currentRecipe?.condiment?.name}}</div>
+        <div>{{currentRecipe?.shell?.name}}</div>
+        <div>
+            <input (click)=nextRecipe() type="button" id="button-next" value="Prossima ricetta" />
+            <input (click)=saveRecipe() type="button" id="button-save" value="Salva ricetta" />
+        </div>
+    </div>
+</div>
